@@ -8,7 +8,7 @@ function MessageInput({ wa_id, onMessageSent }) {
     if (!text.trim()) return;
 
     try {
-      await axios.post("http://localhost:5000/api/messages/send", {
+      await axios.post("https://whatsapp-backend-api-94zm.onrender.com/api/messages/send", {
         wa_id,
         name: "You",
         message: text,
