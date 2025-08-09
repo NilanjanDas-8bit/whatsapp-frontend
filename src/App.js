@@ -9,7 +9,7 @@ function App() {
 
   const fetchChats = useCallback(async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/messages/chats");
+      const res = await axios.get("https://whatsapp-backend-api-94zm.onrender.com/api/messages/chats");
 
       const uniqueChatsMap = res.data.reduce((acc, chat) => {
         acc[chat._id] = chat;
